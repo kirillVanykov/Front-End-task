@@ -1,0 +1,496 @@
+.menu-icon__bar::before, .menu-icon__bar::after
+	height: 2px
+	width: 100%
+	content: ""
+	background-color: #fff
+	display: block
+	position: absolute
+	-webkit-transition: -webkit-transform 0.5s ease
+	transition: -webkit-transform 0.5s ease
+	transition: transform 0.5s ease
+	transition: transform 0.5s ease, -webkit-transform 0.5s ease
+
+.menu
+	width 100%
+	height 45px
+	background-color: #000000
+.menu-up
+	width 100%
+	height 45px
+	background-color: #000000
+	display none
+.menu-content
+	width 90%
+	height 45px
+	margin 0 auto
+
+	text-align center
+.menu-icon
+	height: 20px
+	width: 32px
+	padding-top 20px
+	float left
+	position: relative
+	&:hover
+		cursor: pointer
+		.menu-icon__bar
+			opacity: 0.6
+	
+.menu-icon__bar
+	position: absolute
+	top: 50%
+	height: 3px
+	width: 100%
+	background-color: #fff
+	display: block
+	-webkit-transition: opacity 0.3s ease
+	transition: opacity 0.3s ease
+	&::before
+		top: -10px
+	&::after
+		bottom: -10px
+.menu-icon__bar::before, .menu-icon__bar::after
+	height: 3px
+	width: 100%
+	content: ""
+	background-color: #fff
+	display: block
+.menu-content-name
+	color white
+	display inline-block
+	padding-top 11px
+	font-size 19px
+.menu-content-login-block
+	width 115px
+	height 45px
+	float right
+.menu-content-login-block-name
+	display inline-block
+	float left
+	padding-top 13px
+.menu-content-login-block-name a
+	color white
+.menu-content-login-block-quantiti
+	width 23px
+	height 23px
+	color black
+	display inline-block
+	border-radius 50%
+	border 2px solid black
+	background-color: white
+	position relative
+	top 3px
+	right -20px
+	cursor pointer
+.menu-content-login-block-quantiti p
+	margin-top 3px
+	margin-right .5px
+	cursor pointer
+.menu-content-login-block-bascet
+	display inline-block
+	float right
+	padding-top 7px
+	cursor pointer
+#nav
+	width 450px
+	height 624px
+	display none
+	position absolute
+	top 678px
+	z-index 20
+	border-right 1px solid black
+	border-bottom 1px solid black
+.nav-heder
+	width 100%
+	height 45px
+	background-color: black
+.nav-heder-content
+	width 85%
+	height 23px
+	padding 11px
+	float right
+.nav-heder-content p 
+	margin-left 13px
+	margin-top 3px
+	color white
+	display inline-block
+.close:before, .close:after
+	position: absolute
+	left: 15px
+	content: ' '
+	height: 23px
+	width: 3px
+	background-color: white
+	border-radius 25%
+.close
+	position: absolute
+	right: 15px
+	top: 11px
+	width: 22px
+	height: 22px
+	opacity: 1
+	transition-duration 0.3s
+	float right
+	&:hover
+		opacity: 0.6
+		cursor pointer
+	&:before
+		transform: rotate(45deg)
+	&:after
+		transform: rotate(-45deg)
+.nav-search
+	width 100%
+	height 60px
+	background-color: #b1b1b1
+.nav-search-content
+	width 84%
+	height 100%
+	// padding 11px
+	padding-right 11px
+	float right
+.nav-search-content input
+	width 84%
+	height 39px
+	margin-top 8px
+	border 1px solid white
+	font-size 16px
+.nav-search-content button
+	width 12%
+	height 43px
+	float right
+	margin-top: 8px
+	background url('../../images/icon-search.png') 50% 50% no-repeat
+	background-color: black
+	border 2px solid black
+	cursor pointer
+.nav-menu
+	width 100%
+	height 555px
+	overflow: auto
+.nav-menu-content
+	width 100%
+	height 100%
+	// padding 11px
+	float right
+::-webkit-scrollbar
+	width: 3px
+	height: 3px
+
+::-webkit-scrollbar-track
+	background-color: #999
+
+::-webkit-scrollbar-track-piece
+	background-color: #ffffff
+
+::-webkit-scrollbar-thumb
+	height: 50px
+	background-color: #666
+	border-radius: 3px
+
+::-webkit-scrollbar-corner
+	background-color: #999
+
+::-webkit-scrollbar-button
+	background-color: #666
+
+::-webkit-resizer
+	background-color: #666
+
+.dropdownlink
+	cursor: pointer
+	display: block
+	padding: 15px 15px 15px 80px
+	font-size: 18px
+	border-bottom: 1px solid #ccc
+	// color: #212121
+	position: relative
+	-webkit-transition: all 0.4s ease-out
+	transition: all 0.4s ease-out
+	i
+		position: absolute
+		top: 17px
+		left: 16px
+	.fa-chevron-down
+		right: 12px
+		left: auto
+
+.accordion-menu
+	width: 100%
+	background: #fff
+	li
+		&:last-child
+			.dropdownlink
+				border-bottom: 0
+		&.open
+			.dropdownlink
+				// color: #CDDC39
+				.fa-plus
+					display none
+
+.submenuItems
+	display: none
+	background: black
+	a
+		display: block
+		color: #727272
+		padding: 15px 15px 15px 80px
+		font-size: 18px
+		-webkit-transition: all 0.4s ease-out
+		transition: all 0.4s ease-out
+		&:hover
+			// background-color: #CDDC39
+			color: #fff
+		&.open
+			.dropdownlink
+				// color: #CDDC39
+			
+	li
+		border-bottom: 1px solid #B6B6B6
+.fa
+	color white
+	display inline-block
+	float right
+	-webkit-transform: rotate(270deg)
+	transform: rotate(270deg)
+	padding-left 13px
+	padding-right 20px
+	padding-bottom 13px
+	padding-top 15px
+.fa-plus
+	&:before
+		position absolute
+		top 0 
+		color black
+		
+	margin-left 389px
+.fa-minus
+	&:before
+		position absolute
+		top 3px 
+		color black
+	-webkit-transform: rotate(0deg)
+	transform: rotate(0deg)
+	margin-left 380px
+.nav-menu-content-soc
+	width 100%
+	height 260px
+	background-color: white
+.nav-menu-content-soc-icons
+	width 21%
+	height 36px
+	float right
+	margin-top 225px
+.nav-menu-content-soc-icons img
+	margin-right 10px
+	cursor pointer
+#nav-basket
+	width 450px
+	height 624px
+	display none
+	background-color: white
+	position absolute
+	top 678px
+	right 0px
+	z-index 20
+	border-left 1px solid black
+	border-bottom 1px solid black
+.nav-basket-heder
+	width 100%
+	height 45px
+	background-color: black
+.nav-basket-heder-content
+	width 85%
+	height 23px
+	padding 11px
+	float left
+.nav-basket-heder-content p 
+	margin-right 13px
+	margin-top 3px
+	color white
+	float left
+	display inline-block
+.nav-basket-heder-content-bascet
+	display inline-block
+	float right
+	margin-top -3px
+	margin-right 10px
+	cursor pointer
+.nav-basket-heder-content-quantiti
+	width 23px
+	height 23px
+	color black
+	display inline-block
+	border-radius 50%
+	border 2px solid black
+	background-color: white
+	position absolute
+	top 3px
+	right 83px
+	cursor pointer
+.nav-basket-heder-content-quantiti p
+	margin-top 3px
+	z-index 11
+	color black
+	margin-left 3.5px	
+	cursor pointer
+.nav-basket-products
+	width 100%
+	height 443px
+	overflow: auto
+.nav-basket-products-content
+	width 100%
+	height 118px
+	border-bottom 1px solid #c6c6c6
+.nav-basket-products-content-product
+	width 85%
+	height 118px
+	position: relative
+.nav-basket-products-content-product img
+	width 65px
+	height 118px
+.name-product
+	display inline-block
+	position: absolute
+	top 10px
+	left 75px
+.close-product:before, .close-product:after
+	position: absolute
+	right: 12px
+	content: ' '
+	height: 23px
+	width: 2px
+	background-color: black
+	border-radius 25%
+.close-product
+	width: 22px
+	height: 22px
+	opacity: 1
+	margin-top 8px
+	transition-duration 0.3s
+	float right
+	border 2px solid black
+	&:hover
+		opacity: 0.6
+		cursor pointer
+	&:before
+		transform: rotate(45deg)
+	&:after
+		transform: rotate(-45deg)
+.color
+	width 23px
+	height 22px
+	background-color: black
+	position: absolute
+	top 40px
+	left 75px
+.count-product
+	width 108px
+	height 26px	
+	display inline-block
+	position: absolute
+	top 87px
+	left 75px
+// .count-product p
+// 	display inline-block
+.count-product-minus
+	width 24px
+	height 22px
+	border 2px solid black
+	float left
+	cursor pointer
+.count-minus
+	&:before
+		margin-left 2px
+		cursor pointer
+.count-product-number
+	width 44px
+	height 26px
+	margin-left 4px
+	text-align center
+	display inline-block
+	background-color: #d1d1d1
+.count-product-number p
+	margin-top 4px
+.count-product-plus
+	width 24px
+	height 22px
+	border 2px solid black
+	float right
+	cursor pointer
+// .count-plus
+// 	margin 0px
+// 	padding 0px	
+.count-plus
+	&:before
+		margin-top 10px
+		cursor pointer
+.sum-product
+	float right
+	position: absolute
+	top 97px
+	right 0px
+.nav-basket-total
+	width 100%
+	height 51px
+	background-color: #dcdcdc
+.nav-basket-total-content
+	width 85%
+	height 51px
+.nav-basket-total-content p
+	display inline-block
+	margin-top 16px
+	margin-left 14px
+	font-size 14px
+	color #292929
+.nav-basket-total-content p
+	&:last-child
+		float right
+		margin-top 19px
+.nav-basket-futer
+	width 100%
+	height 85px
+.nav-basket-futer-content
+	width 85%
+	height 85px
+.nav-basket-futer-content-name
+	width 222px
+	height 85px
+	font-size 16px
+	text-align center
+	float left
+.nav-basket-futer-content-name p
+	display inline-block
+	margin-top 25px
+	color #b3b3b3
+.nav-basket-futer-content button
+	width 157px
+	height 85px
+	float right
+	text-align left
+	background-color: black
+	color white
+	position: relative
+	font-size 16px
+	border 1px solid black
+	cursor pointer
+	transition-duration 0.5s
+	&:hover
+		background-color: white
+		border 0px solid black
+		border-left 2px solid black
+		border-right 2px solid black
+		border-bottom 2px solid black
+		color black
+		.nav-basket-futer-content-button
+			&:before
+				color black
+.nav-basket-futer-content-button
+	&:before
+		position: absolute
+		top 10px
+		right 8px
+		cursor pointer
+.nav-basket-futer-content button b
+	position: absolute
+	top 33px
+	left 10px
